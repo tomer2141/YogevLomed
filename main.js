@@ -6,9 +6,12 @@ function init(){
 
     for(var i = 0; i < rows; i++){
         var row = [];
+        var rowElem = document.createElement("DIV");
+        rowElem.classList.add("row");
         for(var j = 0; j < cols; j++){
-            var cell = {};
-            
+            var cell = {row: i, col: j};
+            rowElem.innerHTML += "<div class='cell'></div>";
         }
+        GAME_TEMPLATE.appendChild(rowElem);
     }
 }
