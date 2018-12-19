@@ -1,5 +1,6 @@
 function init(){
     var GAME_TEMPLATE = document.getElementById("game-template");
+    console.log("Yoge is the gayest");
     //Start
     var rows = 3;
     var cols = 3;
